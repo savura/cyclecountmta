@@ -30,3 +30,49 @@ Content-Type: application/json
     "referenceImage":null,
     "header_ID":"286fbfde-c61b-4101-9374-32fb02bf687e"
 }
+
+### Deep insert
+POST http://localhost:4004/cycle-count/InventoryDocuments
+Content-Type: application/json
+
+{
+    "documentNumber" : "100000257",
+    "documentStatus" : 0,
+    "claimedById" : "",
+    "claimedByName" : "",
+    "plant" : "R090",
+    "plantName" : "GARYVILLE REFINERY",
+    "storageLocation" : "001",
+    "storageLocationName" : "MAIN WAREHOUSE",
+    "items": [{
+            "material":"200000043",
+            "materialName": "Steel Pig",
+            "countStatus": 0,
+            "bin": "BIN200",
+            "actualQty": 1,
+            "unitOfMeasure": "EA",
+            "batch": "Batch 200",
+            "comments": "Deep Insert",
+            "referenceImage":null
+    }, {
+            "material":"200000042",
+            "materialName": "Bionic Pig",
+            "countStatus": 0,
+            "bin": "BIN201",
+            "actualQty": 10,
+            "unitOfMeasure": "EA",
+            "batch": "Batch 201",
+            "comments": "Deep Insert",
+            "referenceImage":null
+    }, {
+            "material":"200000043",
+            "materialName": "Spider Pig",
+            "countStatus": 0,
+            "bin": "BIN202",
+            "actualQty": 10,
+            "unitOfMeasure": "EA",
+            "batch": "Batch 202",
+            "comments": "Deep Insert",
+            "referenceImage":null
+    }]
+}
