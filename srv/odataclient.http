@@ -1,0 +1,32 @@
+POST  http://localhost:4004/cycle-count/InventoryDocuments
+Content-Type: application/json
+
+{
+    "documentNumber" : "100000255",
+    "documentStatus" : 0,
+    "claimedById" : "",
+    "claimedByName" : "",
+    "plant" : "R090",
+    "plantName" : "GARYVILLE REFINERY",
+    "storageLocation" : "001",
+    "storageLocationName" : "MAIN WAREHOUSE"
+}
+
+
+
+###
+POST http://localhost:4004/cycle-count/InventoryDocumentItems
+Content-Type: application/json
+
+{
+    "material":"200000043",
+    "materialName": "Steel Pig",
+    "countStatus": 0,
+    "bin": "BIN120",
+    "actualQty": 12,
+    "unitOfMeasure": "EA",
+    "batch": "Batch 121",
+    "comments": "These are the comments",
+    "referenceImage":null,
+    "header_ID":"286fbfde-c61b-4101-9374-32fb02bf687e"
+}
