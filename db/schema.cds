@@ -13,7 +13,9 @@ using {
 
 entity InventoryDocuments : cuid, managed
 {
+    @( title: 'Document Number' )
     documentNumber : String(36);
+    @( title: 'Document Status' )
     documentStatus : Integer;
     claimedById : String(10);
     claimedByName : String(100);

@@ -1,3 +1,7 @@
+### Query
+GET http://localhost:4004/cycle-count/InventoryDocuments
+
+###
 POST  http://localhost:4004/cycle-count/InventoryDocuments
 Content-Type: application/json
 
